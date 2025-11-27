@@ -9,6 +9,12 @@ class DbConnect
     protected $connection;
     protected $request;
 
+    // Permet aux autres classes (comme User) de récupérer $connection sans violer l’encapsulation.
+    public function getConnection()
+    {
+        return $this->connection;
+    }
+
     // const SERVER = 'sqlprive-pc2372-001.eu.clouddb.ovh.net:35167';
     // const USER = 'cefiidev1493';
     // const PASSWORD = '2B3sB5Qgp';
@@ -17,7 +23,7 @@ class DbConnect
     const SERVER = 'localhost';
     const USER = 'root';
     const PASSWORD = '';
-    const BASE = 'ecf2';
+    const BASE = 'championship';
 
     public function __construct()
     {
