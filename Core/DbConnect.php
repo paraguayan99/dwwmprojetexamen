@@ -9,7 +9,7 @@ class DbConnect
     protected $connection;
     protected $request;
 
-    // Permet aux autres classes (comme Models/User.php) de récupérer $connection sans violer l’encapsulation.
+    // Permet aux autres classes (comme Models/UsersModel.php) de récupérer $connection sans violer l’encapsulation.
     public function getConnection()
     {
         return $this->connection;
@@ -18,7 +18,7 @@ class DbConnect
     const SERVER = 'localhost';
     const USER = 'root';
     const PASSWORD = '';
-    const BASE = 'championship';
+    const BASE = 'championship_last';
 
     public function __construct()
     {
