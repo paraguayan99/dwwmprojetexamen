@@ -18,7 +18,7 @@ class DbConnect
     const SERVER = 'localhost';
     const USER = 'root';
     const PASSWORD = '';
-    const BASE = 'championship_last';
+    const BASE = 'championship_db';
 
     public function __construct()
     {
